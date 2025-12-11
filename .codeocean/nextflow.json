@@ -1,0 +1,124 @@
+{
+	"version": 2,
+	"processes": [
+		{
+			"name": "capsule_aind_generic_quality_control_evaluation_aggregator_1",
+			"capsule": {
+				"id": "13f4f8c8-b0af-4ff0-9de0-e9656051b0ea",
+				"name": "aind-generic-quality-control-evaluation-aggregator",
+				"slug": "2492677"
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "6jdWoyEudG4YnCC6",
+					"source_id": "capsule_aind_fip_dff_schema_20_2",
+					"type": "capsule",
+					"name": "aind-fip-dff-schema-2.0",
+					"source_path": "*.json",
+					"collect": true
+				},
+				{
+					"id": "AWlSbbuBmPrlaVyR",
+					"source_id": "capsule_aind_fip_dff_schema_20_2",
+					"type": "capsule",
+					"name": "aind-fip-dff-schema-2.0",
+					"source_path": "dff-qc",
+					"target_path": "dff-qc"
+				},
+				{
+					"id": "Xuvhf3XmD9YLomVZ",
+					"source_id": "capsule_aind_fip_harp_qc_raw_4",
+					"type": "capsule",
+					"name": "aind-fip-harp-qc-raw",
+					"collect": true
+				}
+			],
+			"results": {
+				"id": "13f4f8c8-b0af-4ff0-9de0-e9656051b0ea"
+			}
+		},
+		{
+			"name": "capsule_aind_fip_dff_schema_20_2",
+			"capsule": {
+				"id": "81cd8544-03e9-4b3b-bb8a-53a595aa31c6",
+				"name": "aind-fip-dff-schema-2.0",
+				"slug": "2174900"
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "DlEFPTd7zIwZHNrN",
+					"source_id": "70cf74fe-91fc-4722-99fd-a6e5efbd2a7c",
+					"type": "dataset",
+					"name": "fiber_raw_data",
+					"source_path": "fiber_raw_data/",
+					"target_path": "fiber_raw_data",
+					"collect": true
+				},
+				{
+					"id": "f6yTeucvsuSr8Ite",
+					"source_id": "capsule_aind_fip_harp_base_nwb_3",
+					"type": "capsule",
+					"name": "aind-fip-harp-base-nwb"
+				}
+			],
+			"results": {
+				"id": "81cd8544-03e9-4b3b-bb8a-53a595aa31c6",
+				"source_path": "nwb"
+			}
+		},
+		{
+			"name": "capsule_aind_fip_harp_base_nwb_3",
+			"capsule": {
+				"id": "a9427f6e-026c-474c-acdd-71ac64b7bfe0",
+				"name": "aind-fip-harp-base-nwb",
+				"slug": "3393406"
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "fhxrjT0bryYFGTT6",
+					"source_id": "70cf74fe-91fc-4722-99fd-a6e5efbd2a7c",
+					"type": "dataset",
+					"name": "fiber_raw_data",
+					"source_path": "fiber_raw_data/",
+					"target_path": "fiber_raw_data",
+					"collect": true
+				}
+			]
+		},
+		{
+			"name": "capsule_aind_fip_harp_qc_raw_4",
+			"capsule": {
+				"id": "7764def7-3a9e-4ca1-abed-aebb4246f885",
+				"name": "aind-fip-harp-qc-raw",
+				"slug": "9412949"
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "nytlv9ELLI1z6l1i",
+					"source_id": "70cf74fe-91fc-4722-99fd-a6e5efbd2a7c",
+					"type": "dataset",
+					"name": "fiber_raw_data",
+					"source_path": "fiber_raw_data/",
+					"target_path": "fiber_raw_data",
+					"collect": true
+				}
+			]
+		}
+	]
+}
