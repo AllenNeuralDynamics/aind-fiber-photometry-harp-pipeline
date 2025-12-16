@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:5b7a48849061008f90412239193a301c904fdad74ada2a9365591a69aea3ab87
+// hash:sha256:ef09e9e28acfeac4e94a475c554dcd618b808d48c64d71dd0cdcf2d46febc4b7
 
 // capsule - aind-fip-harp-base-nwb
 process capsule_aind_fip_harp_base_nwb_3 {
@@ -13,7 +13,7 @@ process capsule_aind_fip_harp_base_nwb_3 {
 	path 'capsule/data/fiber_raw_data'
 
 	output:
-	path 'capsule/results/*', emit: to_capsule_aind_fip_dff_schema_20_2_5
+	path 'capsule/results/*', emit: to_capsule_aind_fip_dff_schema_20_2_4
 
 	script:
 	"""
@@ -104,8 +104,8 @@ process capsule_aind_fip_dff_schema_20_2 {
 	publishDir "$RESULTS_PATH", saveAs: { filename -> filename.matches("capsule/results/nwb") ? new File(filename).getName() : null }
 
 	input:
-	path 'capsule/data/fiber_raw_data'
 	path 'capsule/data/'
+	path 'capsule/data/fiber_raw_data'
 
 	output:
 	path 'capsule/results/*.json', emit: to_capsule_aind_generic_quality_control_evaluation_aggregator_1_1
@@ -198,13 +198,13 @@ params.fiber_raw_data_url = 's3://aind-private-data-prod-o5171v/behavior_778334_
 
 workflow {
 	// input data
-	fiber_raw_data_to_aind_fip_dff_schema_2_0_4 = Channel.fromPath(params.fiber_raw_data_url + "/", type: 'any')
+	fiber_raw_data_to_aind_fip_dff_schema_2_0_5 = Channel.fromPath(params.fiber_raw_data_url + "/", type: 'any')
 	fiber_raw_data_to_aind_fip_harp_base_nwb_6 = Channel.fromPath(params.fiber_raw_data_url + "/", type: 'any')
 	fiber_raw_data_to_aind_fip_harp_qc_raw_7 = Channel.fromPath(params.fiber_raw_data_url + "/", type: 'any')
 
 	// run processes
 	capsule_aind_fip_harp_base_nwb_3(fiber_raw_data_to_aind_fip_harp_base_nwb_6.collect())
 	capsule_aind_fip_harp_qc_raw_4(fiber_raw_data_to_aind_fip_harp_qc_raw_7.collect())
-	capsule_aind_fip_dff_schema_20_2(fiber_raw_data_to_aind_fip_dff_schema_2_0_4.collect(), capsule_aind_fip_harp_base_nwb_3.out.to_capsule_aind_fip_dff_schema_20_2_5)
+	capsule_aind_fip_dff_schema_20_2(capsule_aind_fip_harp_base_nwb_3.out.to_capsule_aind_fip_dff_schema_20_2_4.collect(), fiber_raw_data_to_aind_fip_dff_schema_2_0_5.collect())
 	capsule_aind_generic_quality_control_evaluation_aggregator_1(capsule_aind_fip_dff_schema_20_2.out.to_capsule_aind_generic_quality_control_evaluation_aggregator_1_1.collect(), capsule_aind_fip_dff_schema_20_2.out.to_capsule_aind_generic_quality_control_evaluation_aggregator_1_2, capsule_aind_fip_harp_qc_raw_4.out.to_capsule_aind_generic_quality_control_evaluation_aggregator_1_3.collect())
 }

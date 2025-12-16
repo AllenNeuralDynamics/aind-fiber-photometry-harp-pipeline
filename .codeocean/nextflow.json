@@ -56,6 +56,13 @@
 			},
 			"inputs": [
 				{
+					"id": "f6yTeucvsuSr8Ite",
+					"source_id": "capsule_aind_fip_harp_base_nwb_3",
+					"type": "capsule",
+					"name": "aind-fip-harp-base-nwb",
+					"collect": true
+				},
+				{
 					"id": "DlEFPTd7zIwZHNrN",
 					"source_id": "70cf74fe-91fc-4722-99fd-a6e5efbd2a7c",
 					"type": "dataset",
@@ -63,12 +70,6 @@
 					"source_path": "fiber_raw_data/",
 					"target_path": "fiber_raw_data",
 					"collect": true
-				},
-				{
-					"id": "f6yTeucvsuSr8Ite",
-					"source_id": "capsule_aind_fip_harp_base_nwb_3",
-					"type": "capsule",
-					"name": "aind-fip-harp-base-nwb"
 				}
 			],
 			"results": {
