@@ -4,9 +4,10 @@
 		{
 			"name": "capsule_aind_generic_quality_control_evaluation_aggregator_1",
 			"capsule": {
-				"id": "13f4f8c8-b0af-4ff0-9de0-e9656051b0ea",
+				"id": "03b3acfd-fdef-46b0-ad80-50e9d4e00827",
 				"name": "aind-generic-quality-control-evaluation-aggregator",
-				"slug": "2492677"
+				"slug": "5290719",
+				"version": 2
 			},
 			"resources": {
 				"cpus": 1,
@@ -44,9 +45,10 @@
 		{
 			"name": "capsule_aind_fip_dff_schema_20_2",
 			"capsule": {
-				"id": "81cd8544-03e9-4b3b-bb8a-53a595aa31c6",
+				"id": "3f080c71-507d-419d-98ce-81765cea8112",
 				"name": "aind-fip-dff-schema-2.0",
-				"slug": "2174900"
+				"slug": "2347641",
+				"version": 1
 			},
 			"resources": {
 				"cpus": 1,
@@ -77,9 +79,10 @@
 		{
 			"name": "capsule_aind_fip_harp_base_nwb_3",
 			"capsule": {
-				"id": "a9427f6e-026c-474c-acdd-71ac64b7bfe0",
+				"id": "f61f6066-1a16-4f72-8482-144b26d552fe",
 				"name": "aind-fip-harp-base-nwb",
-				"slug": "3393406"
+				"slug": "0521736",
+				"version": 1
 			},
 			"resources": {
 				"cpus": 1,
@@ -100,9 +103,10 @@
 		{
 			"name": "capsule_aind_fip_harp_qc_raw_4",
 			"capsule": {
-				"id": "7764def7-3a9e-4ca1-abed-aebb4246f885",
+				"id": "55a33c6a-19f5-4edc-90f0-d1e5b69e51c8",
 				"name": "aind-fip-harp-qc-raw",
-				"slug": "9412949"
+				"slug": "7675914",
+				"version": 1
 			},
 			"resources": {
 				"cpus": 1,
