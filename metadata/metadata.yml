@@ -1,2 +1,10 @@
 metadata_version: 1
 name: Fiber Photometry Standard Harp 2.0 Pipeline
+description: Pipeline to process Fiber Photometry Data acquired with Harp Standard
+
+authors:
+- name: Ahad Bawany
+- name: Arjun Sridhar
+- name: Arielle Leon
+- name: Bruno Cruz
+- name: Johannes Friedrich
