@@ -7,7 +7,7 @@
 				"id": "03b3acfd-fdef-46b0-ad80-50e9d4e00827",
 				"name": "aind-generic-quality-control-evaluation-aggregator",
 				"slug": "5290719",
-				"version": 3
+				"version": 4
 			},
 			"resources": {
 				"cpus": 1,
@@ -48,7 +48,7 @@
 				"id": "3f080c71-507d-419d-98ce-81765cea8112",
 				"name": "aind-fip-dff-schema-2.0",
 				"slug": "2347641",
-				"version": 4
+				"version": 5
 			},
 			"resources": {
 				"cpus": 2,
@@ -107,7 +107,7 @@
 				"id": "55a33c6a-19f5-4edc-90f0-d1e5b69e51c8",
 				"name": "aind-fip-harp-qc-raw",
 				"slug": "7675914",
-				"version": 2
+				"version": 3
 			},
 			"resources": {
 				"cpus": 1,
