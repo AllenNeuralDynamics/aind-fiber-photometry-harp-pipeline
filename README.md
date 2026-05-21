@@ -24,7 +24,9 @@ Under the `fib` folder, the data will be stored as defined in the file standard 
  ┣ 📂MouseID_YYYY-MM-DD_HH-M-S
  ┃ ┣ 📂fib
  ┣ 📜data_description.json
- ┣ 📜session.json
+ ┣ 📜acquisition.json
+ ┣ 📜instrument.json
+ ┣ 📜procedures.json
  ┗ 📜processing.json
  ```
 # Output
