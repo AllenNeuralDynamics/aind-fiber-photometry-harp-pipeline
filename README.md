@@ -38,7 +38,12 @@ Under the `fib` folder, the data will be stored as defined in the file standard 
  ┃ 📂dff-qc
  ┃ 📂qc-raw
  ┃ 📂nwb
+ ┗ 📜acquisition.json
+ ┗ 📜instrument.json
+ ┗ 📜data_description.json
  ┗ 📜processing.json
+ ┗ 📜quality_control.json
+ ┗ 📜procedures.json
  ```
 
 The following files will be under the 'dff-qc' directory within the `results` folder (if there is fiber data to qc):
