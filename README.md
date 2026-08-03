@@ -11,11 +11,11 @@ The [fiber photometry pipeline](https://codeocean.allenneuraldynamics.org/capsul
 
 * [aind-generic-quality-control-evaluation-aggregator](https://github.com/AllenNeuralDynamics/aind-generic-quality-control-evaluation-aggregator): Combines QC outputs into one QC JSON
 
-# Input
+# Pipeline Input
 
 Currently, the pipeline supports the following input data types:
 
-* `aind`: data ingestion used at AIND. If an "fib" folder is included, fiber data will be packaged. The root directory must contain JSON files following [aind-data-schema](https://github.com/AllenNeuralDynamics/aind-data-schema).
+* `aind`: data ingestion used at AIND. If an "fib" folder is included, fiber data will be packaged. The root directory must contain JSON files following [aind-data-schema](https://github.com/AllenNeuralDynamics/aind-data-schema). At this stage, all of the aind metadata should be generated, and there should be a single json file for each of the core schema files as shown below.
 
 Under the `fib` folder, the data will be stored as defined in the file standard linked above.
 
@@ -24,7 +24,9 @@ Under the `fib` folder, the data will be stored as defined in the file standard 
  ┣ 📂MouseID_YYYY-MM-DD_HH-M-S
  ┃ ┣ 📂fib
  ┣ 📜data_description.json
- ┣ 📜session.json
+ ┣ 📜acquisition.json
+ ┣ 📜instrument.json
+ ┣ 📜procedures.json
  ┗ 📜processing.json
  ```
 # Output
@@ -36,7 +38,12 @@ Under the `fib` folder, the data will be stored as defined in the file standard 
  ┃ 📂dff-qc
  ┃ 📂qc-raw
  ┃ 📂nwb
+ ┗ 📜acquisition.json
+ ┗ 📜instrument.json
+ ┗ 📜data_description.json
  ┗ 📜processing.json
+ ┗ 📜quality_control.json
+ ┗ 📜procedures.json
  ```
 
 The following files will be under the 'dff-qc' directory within the `results` folder (if there is fiber data to qc):
