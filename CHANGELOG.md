@@ -1,4 +1,13 @@
-# 0.1.0 (2026-08-07)
+## [0.1.1](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/compare/v0.1.0...v0.1.1) (2026-11-04)
+
+
+### Bug Fixes
+
+* hotfix for pin of aind-data-schema-models ([#14](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/issues/14)) ([3920aed](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/commit/3920aedee2d3a43ac15725673319329140e6ec60))
+
+
+
+# [0.1.0](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/compare/1d7d4b7a97fd9a874655725591777866fcc55fb6...v0.1.0) (2026-08-07)
 
 
 ### Bug Fixes
