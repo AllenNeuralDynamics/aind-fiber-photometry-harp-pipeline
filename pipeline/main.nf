@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:e1cfee44be77582535e8b2e5aa63e20ae307af8d5d6edd56ac7c85175dd886b9
+// hash:sha256:8a2fa37b0096a2640b4bd468f1598ab4bf1098a495185d21e0aa2358d4b7c742
 
 // capsule - aind-fip-harp-base-nwb
 process capsule_aind_fip_harp_base_nwb_3 {
@@ -96,12 +96,12 @@ process capsule_aind_fip_harp_qc_raw_4 {
 // capsule - aind-fip-dff-schema-2.0
 process capsule_aind_fip_dff_schema_20_2 {
 	tag 'capsule-2347641'
-	container "$REGISTRY_HOST/published/3f080c71-507d-419d-98ce-81765cea8112:v5"
+	container "$REGISTRY_HOST/published/3f080c71-507d-419d-98ce-81765cea8112:v6"
 
 	cpus 2
 	memory '15 GB'
 
-	publishDir "$RESULTS_PATH", saveAs: { filename -> filename.matches("capsule/results/nwb") ? new File(filename).getName() : null }
+	publishDir "$RESULTS_PATH", mode: 'copy', saveAs: { filename -> filename.matches("capsule/results/nwb") ? new File(filename).getName() : null }
 
 	input:
 	path 'capsule/data/'
@@ -128,9 +128,9 @@ process capsule_aind_fip_dff_schema_20_2 {
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git -c credential.helper= clone --filter=tree:0 --branch v5.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2347641.git" capsule-repo
+		git -c credential.helper= clone --filter=tree:0 --branch v6.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2347641.git" capsule-repo
 	else
-		git -c credential.helper= clone --branch v5.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2347641.git" capsule-repo
+		git -c credential.helper= clone --branch v6.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2347641.git" capsule-repo
 	fi
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
@@ -152,7 +152,7 @@ process capsule_aind_generic_quality_control_evaluation_aggregator_1 {
 	cpus 1
 	memory '7.5 GB'
 
-	publishDir "$RESULTS_PATH", saveAs: { filename -> new File(filename).getName() }
+	publishDir "$RESULTS_PATH", mode: 'copy', saveAs: { filename -> new File(filename).getName() }
 
 	input:
 	path 'capsule/data/'
