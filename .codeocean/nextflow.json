@@ -48,7 +48,7 @@
 				"id": "3f080c71-507d-419d-98ce-81765cea8112",
 				"name": "aind-fip-dff-schema-2.0",
 				"slug": "2347641",
-				"version": 5
+				"version": 6
 			},
 			"resources": {
 				"cpus": 2,
