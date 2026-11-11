@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/compare/v0.1.1...v0.2.0) (2026-11-11)
+
+
+### Features
+
+* use latest released capsule ([#16](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/issues/16)) ([0c8189d](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/commit/0c8189dd64a78d19e1a4fc387741f0c26910d6c4))
+
+
+
 ## [0.1.1](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/compare/v0.1.0...v0.1.1) (2026-11-04)
 
 
