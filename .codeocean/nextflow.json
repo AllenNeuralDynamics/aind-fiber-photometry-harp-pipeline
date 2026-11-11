@@ -83,7 +83,7 @@
 				"id": "f61f6066-1a16-4f72-8482-144b26d552fe",
 				"name": "aind-fip-harp-base-nwb",
 				"slug": "0521736",
-				"version": 1
+				"version": 2
 			},
 			"resources": {
 				"cpus": 1,
