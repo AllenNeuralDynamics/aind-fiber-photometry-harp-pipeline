@@ -1,10 +1,10 @@
 #!/usr/bin/env nextflow
-// hash:sha256:8a2fa37b0096a2640b4bd468f1598ab4bf1098a495185d21e0aa2358d4b7c742
+// hash:sha256:6b7b039ce3a753f1b5e9c778e09ff770137538dbeb82e514842657844d26b9a1
 
 // capsule - aind-fip-harp-base-nwb
 process capsule_aind_fip_harp_base_nwb_3 {
 	tag 'capsule-0521736'
-	container "$REGISTRY_HOST/published/f61f6066-1a16-4f72-8482-144b26d552fe:v1"
+	container "$REGISTRY_HOST/published/f61f6066-1a16-4f72-8482-144b26d552fe:v2"
 
 	cpus 1
 	memory '7.5 GB'
@@ -31,9 +31,9 @@ process capsule_aind_fip_harp_base_nwb_3 {
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git -c credential.helper= clone --filter=tree:0 --branch v1.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-0521736.git" capsule-repo
+		git -c credential.helper= clone --filter=tree:0 --branch v2.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-0521736.git" capsule-repo
 	else
-		git -c credential.helper= clone --branch v1.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-0521736.git" capsule-repo
+		git -c credential.helper= clone --branch v2.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-0521736.git" capsule-repo
 	fi
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
