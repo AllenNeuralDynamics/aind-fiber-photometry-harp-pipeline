@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:130ec56fe9e0a7bc883445c3bb5717bbc0b93bdd7d2b8dd47aa80de5650c5516
+// hash:sha256:a26350287390d227d6c3a43dd9f4c153de4bd52107084a12d57bd52fb3e04b4d
 
 // capsule - aind-fip-harp-base-nwb
 process capsule_aind_fip_harp_base_nwb_3 {
@@ -99,7 +99,7 @@ process capsule_aind_fip_harp_qc_raw_4 {
 // capsule - aind-fip-dff
 process capsule_aind_fip_dff_2 {
 	tag 'capsule-0871307'
-	container "$REGISTRY_HOST/capsule/2e0471bb-1878-4ddf-99b7-6efe6a404f5d:7d7f09e386abb4a369051713ff21322b"
+	container "$REGISTRY_HOST/capsule/2e0471bb-1878-4ddf-99b7-6efe6a404f5d:18e59cf82e7a1469b862c1ad8fb14866"
 
 	cpus 2
 	memory '15 GB'
@@ -135,7 +135,7 @@ process capsule_aind_fip_dff_2 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-0871307.git" capsule-repo
 	fi
-	git -C capsule-repo checkout e7752ffbbf8682d9ca9fc92203a9e883da7e5d18 --quiet
+	git -C capsule-repo checkout f5021e1b653e0b180aa74a17b0e829cc52c2df94 --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
