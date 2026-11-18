@@ -68,7 +68,7 @@
 				"id": "55a33c6a-19f5-4edc-90f0-d1e5b69e51c8",
 				"name": "aind-fip-harp-qc-raw",
 				"slug": "7675914",
-				"version": 5
+				"version": 6
 			},
 			"resources": {
 				"cpus": 1,
