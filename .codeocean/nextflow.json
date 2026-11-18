@@ -4,11 +4,10 @@
 		{
 			"name": "capsule_aind_fip_dff_2",
 			"capsule": {
-				"id": "2e0471bb-1878-4ddf-99b7-6efe6a404f5d",
+				"id": "603a2149-6281-4a7b-bbd6-ff50ca0e064e",
 				"name": "aind-fip-dff",
-				"slug": "0871307",
-				"commit": "f5021e1b653e0b180aa74a17b0e829cc52c2df94",
-				"image_tag": "18e59cf82e7a1469b862c1ad8fb14866",
+				"slug": "1001867",
+				"version": 20,
 				"app_panel": true
 			},
 			"resources": {
@@ -35,7 +34,7 @@
 				}
 			],
 			"results": {
-				"id": "2e0471bb-1878-4ddf-99b7-6efe6a404f5d",
+				"id": "603a2149-6281-4a7b-bbd6-ff50ca0e064e",
 				"source_path": "{dff-qc,fiber.nwb.zarr}"
 			}
 		},
