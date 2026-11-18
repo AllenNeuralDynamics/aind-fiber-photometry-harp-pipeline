@@ -11,55 +11,52 @@
 			"target": "capsule_aind_fip_harp_base_nwb_3"
 		},
 		{
-			"id": "xy-edge__c16d7200-cd40-4ec8-aaff-92f753b14ad6-capsule_aind_fip_dff_schema_20_2",
+			"id": "xy-edge__c16d7200-cd40-4ec8-aaff-92f753b14ad6-capsule_aind_fip_dff_2",
 			"source": "c16d7200-cd40-4ec8-aaff-92f753b14ad6",
-			"target": "capsule_aind_fip_dff_schema_20_2"
+			"target": "capsule_aind_fip_dff_2"
 		},
 		{
-			"id": "xy-edge__capsule_aind_fip_harp_base_nwb_3-capsule_aind_fip_dff_schema_20_2",
+			"id": "xy-edge__capsule_aind_fip_harp_base_nwb_3-capsule_aind_fip_dff_2",
 			"source": "capsule_aind_fip_harp_base_nwb_3",
-			"target": "capsule_aind_fip_dff_schema_20_2"
+			"target": "capsule_aind_fip_dff_2"
 		},
 		{
-			"id": "xy-edge__capsule_aind_fip_harp_qc_raw_4-capsule_aind_generic_quality_control_evaluation_aggregator_1",
-			"selected": false,
+			"id": "xy-edge__capsule_aind_fip_dff_2-results",
+			"source": "capsule_aind_fip_dff_2",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_aind_fip_harp_qc_raw_4-results",
 			"source": "capsule_aind_fip_harp_qc_raw_4",
-			"target": "capsule_aind_generic_quality_control_evaluation_aggregator_1"
-		},
-		{
-			"id": "xy-edge__capsule_aind_fip_dff_schema_20_2-capsule_aind_generic_quality_control_evaluation_aggregator_1",
-			"source": "capsule_aind_fip_dff_schema_20_2",
-			"target": "capsule_aind_generic_quality_control_evaluation_aggregator_1"
-		},
-		{
-			"id": "xy-edge__capsule_aind_generic_quality_control_evaluation_aggregator_1-results",
-			"source": "capsule_aind_generic_quality_control_evaluation_aggregator_1",
 			"target": "results"
 		},
 		{
-			"id": "xy-edge__capsule_aind_fip_dff_schema_20_2-results",
-			"source": "capsule_aind_fip_dff_schema_20_2",
+			"id": "xy-edge__capsule_aind_fip_dff_2-capsule_aind_metadata_manager_capsule_5",
+			"source": "capsule_aind_fip_dff_2",
+			"target": "capsule_aind_metadata_manager_capsule_5"
+		},
+		{
+			"id": "xy-edge__c16d7200-cd40-4ec8-aaff-92f753b14ad6-capsule_aind_metadata_manager_capsule_5",
+			"source": "c16d7200-cd40-4ec8-aaff-92f753b14ad6",
+			"target": "capsule_aind_metadata_manager_capsule_5"
+		},
+		{
+			"id": "xy-edge__capsule_aind_metadata_manager_capsule_5-results",
+			"source": "capsule_aind_metadata_manager_capsule_5",
 			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_aind_fip_harp_qc_raw_4-capsule_aind_metadata_manager_capsule_5",
+			"source": "capsule_aind_fip_harp_qc_raw_4",
+			"target": "capsule_aind_metadata_manager_capsule_5"
 		}
 	],
 	"nodes": [
 		{
-			"data": {
-				"capsule_id": "03b3acfd-fdef-46b0-ad80-50e9d4e00827"
-			},
-			"id": "capsule_aind_generic_quality_control_evaluation_aggregator_1",
-			"position": {
-				"x": 915.111083984375,
-				"y": 923.1111043294271
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
 			"id": "results",
 			"position": {
-				"x": 1337.7777506510417,
-				"y": 1287.111104329427
+				"x": 1182.698855187531,
+				"y": 1415.8260385787933
 			},
 			"selected": false,
 			"type": "results"
@@ -70,8 +67,8 @@
 			},
 			"id": "capsule_aind_fip_harp_base_nwb_3",
 			"position": {
-				"x": 1053.7777506510417,
-				"y": 472.44443766276044
+				"x": 1153.5355190347093,
+				"y": 492.39599133949395
 			},
 			"selected": false,
 			"type": "capsule"
@@ -82,10 +79,10 @@
 			},
 			"id": "capsule_aind_fip_harp_qc_raw_4",
 			"position": {
-				"x": 645.7777506510417,
-				"y": 451.11110432942723
+				"x": 560.354275752431,
+				"y": 615.3251498080004
 			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		},
 		{
@@ -94,13 +91,26 @@
 				"x": 1191.111083984375,
 				"y": 119.11110432942708
 			},
+			"selected": false,
 			"type": "dataset"
 		},
 		{
 			"data": {
-				"capsule_id": "3f080c71-507d-419d-98ce-81765cea8112"
+				"capsule_id": "22261566-0b4f-42aa-bcaa-58efa55bf653"
 			},
-			"id": "capsule_aind_fip_dff_schema_20_2",
+			"id": "capsule_aind_metadata_manager_capsule_5",
+			"position": {
+				"x": 1014.2149083585617,
+				"y": 846.3224649039154
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "603a2149-6281-4a7b-bbd6-ff50ca0e064e"
+			},
+			"id": "capsule_aind_fip_dff_2",
 			"position": {
 				"x": 1482.5367817146862,
 				"y": 688.7476574097196
@@ -109,10 +119,5 @@
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1770172672045,
-	"viewport": {
-		"x": 12.32236255212706,
-		"y": 5.991526399015015,
-		"zoom": 0.8060413354531002
-	}
+	"timestamp": 1794963246829
 }

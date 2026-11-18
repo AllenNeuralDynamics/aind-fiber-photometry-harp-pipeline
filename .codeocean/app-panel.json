@@ -1,0 +1,7 @@
+{
+	"version": 1,
+	"processes": [
+		"capsule_aind_fip_dff_2",
+		"capsule_aind_metadata_manager_capsule_5"
+	]
+}
