@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/compare/v0.5.0...v0.6.0) (2026-11-25)
+
+
+### Features
+
+* use latest dff released capsule ([#24](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/issues/24)) ([d172468](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/commit/d17246828800e8470014ef63ddeda762b735d2ac))
+
+
+
 # [0.5.0](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/compare/v0.4.0...v0.5.0) (2026-11-19)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * use latest released capsule ([#16](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/issues/16)) ([0c8189d](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/commit/0c8189dd64a78d19e1a4fc387741f0c26910d6c4))
-
-
-
-## [0.1.1](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/compare/v0.1.0...v0.1.1) (2026-11-04)
-
-
-### Bug Fixes
-
-* hotfix for pin of aind-data-schema-models ([#14](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/issues/14)) ([3920aed](https://github.com/AllenNeuralDynamics/aind-fiber-photometry-harp-pipeline/commit/3920aedee2d3a43ac15725673319329140e6ec60))
 
 
 
